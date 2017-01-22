@@ -1,0 +1,43 @@
+{
+  "name": "serenity-node",
+  "version": "0.0.1",
+  "description": "A node layer built on top of serenitydi which includes a useful framework for rapid API development with NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "start": "npm run build; node bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dos-j/serenity-node.git"
+  },
+  "keywords": [
+    "serenity",
+    "node",
+    "framework",
+    "dependency",
+    "injection",
+    "ioc"
+  ],
+  "author": "dos-j",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/dos-j/serenity-node/issues"
+  },
+  "homepage": "https://github.com/dos-j/serenity-node#readme",
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "rollup": "^0.41.4",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^7.0.0",
+    "rollup-plugin-json": "^2.1.0",
+    "rollup-plugin-node-resolve": "^2.0.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "serenitydi": "^1.3.1"
+  }
+}
