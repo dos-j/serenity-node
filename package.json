@@ -4,7 +4,8 @@
   "description": "A node layer built on top of serenitydi which includes a useful framework for rapid API development with NodeJS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "prepublish": "npm run build",
     "build": "rollup -c",
     "start": "npm run build; node bundle.js"
   },
@@ -28,8 +29,11 @@
   "homepage": "https://github.com/dos-j/serenity-node#readme",
   "devDependencies": {
     "babel-cli": "^6.22.2",
+    "babel-jest": "^18.0.0",
+    "babel-polyfill": "^6.22.0",
     "babel-preset-env": "^1.1.8",
     "babel-preset-es2015-rollup": "^3.0.0",
+    "jest": "^18.1.0",
     "rollup": "^0.41.4",
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-commonjs": "^7.0.0",

@@ -6,7 +6,10 @@ export default {
   format: 'cjs',
   plugins: [ 
     json(), 
-    babel() 
+    babel({
+      presets: ['es2015-rollup'],
+      babelrc: false
+    }) 
   ],
   dest: 'bundle.js'
 };
