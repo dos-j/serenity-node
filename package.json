@@ -2,7 +2,7 @@
   "name": "serenity-node",
   "version": "0.0.1",
   "description": "A node layer built on top of serenitydi which includes a useful framework for rapid API development with NodeJS",
-  "main": "index.js",
+  "main": "bundle.js",
   "scripts": {
     "test": "jest",
     "prepublish": "npm run build",
